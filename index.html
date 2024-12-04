@@ -1,131 +1,75 @@
-# project-website
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Dr Rosier</title>
+    <meta charset="utf-8">
+    <title>Cabinet médical du Dr Rosier</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+        table, td, th {
+         border: 1px solid black;
+         text-align: center;
+            }
+    .medium-image {
+        width: 400px;  /* Largeur de l'image */
+        height: auto;  /* Hauteur ajustée automatiquement en fonction du rapport d'aspect */
+    }
+            /* Agrandir les titres */
+            .title-big {
+                font-size: 28px;
+            }
 
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2 {
-            color: #2a6eb3;
-        }
-
-        h3 {
-            color: #333;
-        }
-
-        .section-title {
-            margin-top: 20px;
-            border-bottom: 2px solid #2a6eb3;
-            padding-bottom: 5px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .contact-info, .skills, .education, .experience {
-            margin-bottom: 20px;
-        }
-
-        .contact-info li, .skills li, .education li, .experience li {
-            margin-left: 20px;
-        }
-
-        .contact-info li span, .skills li span, .education li span, .experience li span {
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            font-size: 0.9em;
-            color: #777;
-            margin-top: 40px;
-        }
+            .title-urgent {
+                font-size: 24px; /* Taille plus grande pour le titre h3 */
+            }
+        
+            .title-contact {
+                font-size: 22px; /* Taille plus grande pour le titre h4 */
+            }
     </style>
 </head>
 <body>
+<h1><strong>Cabinet médical du <a href="CVdocteur.html">Dr Rosier</a></strong></h1>
 
-<div class="container">
-    <h1>Dr Rosier</h1>
-    <p>Profession: Médecin généraliste</p>
 
-    <div class="contact-info">
-        <h2 class="section-title">Coordonnées</h2>
-        <ul>
-            <li><span>Téléphone:</span> 01.XX.XX.XX.XX</li>
-            <li><span>Email:</span> dr.rosier@cabinet.com</li>
-            <li><span>Adresse:</span> 123 Rue de la Santé, 75000 Paris</li>
-        </ul>
-    </div>
+  
+    <img src="cabinetmedical.jpg" alt="Cabinet médical" class="medium-image">
+ <p>
+        Bienvenue, je suis le Dr Rosier.<br>
+        Sur cette page vous trouverez des renseignements sur mon cabinet médical.
+    </p>
+   
+         <h2 class="title-big"> Horrraires d'ouvertures</h2>
 
-    <div class="experience">
-        <h2 class="section-title">Expérience Professionnelle</h2>
-        <ul>
-            <li>
-                <h3>Médecin généraliste</h3>
-                <p><strong>Cabinet médical du Dr Rosier</strong>, Paris, 2010 - Présent</p>
-                <ul>
-                    <li>Consultations médicales pour adultes et enfants</li>
-                    <li>Gestion des urgences médicales</li>
-                    <li>Suivi des patients chroniques et prévention</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Stagiaire en médecine</h3>
-                <p><strong>Hôpital de Paris</strong>, 2008 - 2010</p>
-                <ul>
-                    <li>Assistance aux médecins seniors dans les soins quotidiens</li>
-                    <li>Suivi des patients sous supervision</li>
-                    <li>Prise en charge des consultations externes</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+          <p>
+            Le cabinet est ouvert tous les jours du Lundi au Samedi:
+           </p>
+           
+           <table> <!-- Voici la balise pour faire un tableau avec bordure-->
+            <tr><th><strong>Jours</strong></th> <th><strong>Horaires</strong></th> <th><strong>Horaires</strong></th></tr>
+            <tr><td><strong>Lundi</strong></td> <td>10h00-12h00</td> <td>14h00-19h00</td></tr>
+            <tr><td><strong>Mardi</strong></td> <td>8h30-12h00</td> <td>14h00-19h00</td></tr>
+            <tr><td><strong>Mercredi</strong></td> <td>8h30-12h00</td> <td>14h00-19h00</td></tr>
+            <tr><td><strong>Jeudi</strong></td> <td>8h30-12h00</td> <td>14h00-19h00</td></tr>
+            <tr><td><strong>Vendredi</strong></td> <td>8h30-12h00</td> <td>14h00-19h00</td></tr>
+            <tr><td><strong>Samedi</strong></td> <td>8h30-12h00</td> <td style="text-align: center"> - </td></tr>
+            <tr><td><strong>Dimanche</strong></td> <td> - </td> <td> - </td></tr>
+            </table>
 
-    <div class="education">
-        <h2 class="section-title">Formation</h2>
-        <ul>
-            <li><span>Doctorat en Médecine:</span> Université de Paris, 2008</li>
-            <li><span>Diplôme d'Études Spécialisées (DES) en Médecine Générale:</span> Université de Paris, 2010</li>
-        </ul>
-    </div>
+            <h3 class="title-urgent">En cas d'urgence</h3>
+            <p>
+                Pendant les heures d'ouverture, appelez le numéro du cabinet : <strong>(01.XX.XX.XX.XX)</strong><br>
+                Si vous ne pouvez pas me joindre, appelez le 15 (SAMU).<br>
+                <br>
+                En dehors des heures d'ouverture, le répondeur du cabinet vous donnera les coordonnées du médecin de garde.
+            </p>
+        
+            <h4 class="title-contact">Me joindre par internet</h4>
+            <p>
+                Si vous désirez me joindre, vous pouvez <a href="https://www.ordomedic.be/fr/contact/">utiliser le formulaire de contact suivant.</a>
+                <br> Je suis également membre de démonstration des <abbr title="Médecin Maîtres-Toile">MMT</abbr>.
+            </p>
 
-    <div class="skills">
-        <h2 class="section-title">Compétences</h2>
-        <ul>
-            <li><span>Compétences médicales:</span> Médecine générale, urgences, médecine préventive</li>
-            <li><span>Compétences interpersonnelles:</span> Communication avec les patients, gestion du stress</li>
-            <li><span>Langues:</span> Français (natif), Anglais (courant)</li>
-            <li><span>Technologies:</span> Logiciels médicaux, Dossier Patient Informatisé (DPI)</li>
-        </ul>
-    </div>
-
-    <footer>
-        <p>CV de Dr Rosier - 2024</p>
-    </footer>
-</div>
-
-</body>
-</html>
+            <a href="medicament.html">Ici la liste des médicaments</a>
+            <p>Cliquez <a href="medicament.html#fin-liste">ici</a> pour voir la fin de la liste dans la page 2.</p>
+        </body>
+        </html>
